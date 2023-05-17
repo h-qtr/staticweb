@@ -1,80 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>My Simple Website</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-		body {
-			background-color: #f2f2f2;
-			font-family: Arial, sans-serif;
-			color: #333;
-			margin: 0;
-			padding: 0;
-		}
-		header {
-			background-color: #444;
-			color: #fff;
-			padding: 20px;
-			text-align: center;
-			font-size: 36px;
-			font-weight: bold;
-		}
-		nav {
-			background-color: #888;
-			padding: 10px;
-			text-align: center;
-			margin-bottom: 20px;
-		}
-		nav a {
-			color: #fff;
-			text-decoration: none;
-			padding: 10px;
-			margin: 0 10px;
-			font-size: 24px;
-		}
-		section {
-			background-color: #fff;
-			padding: 20px;
-			margin: 0 auto;
-			max-width: 800px;
-			text-align: justify;
-		}
-		h1 {
-			font-size: 28px;
-			font-weight: bold;
-			margin-top: 0;
-		}
-		img {
-			max-width: 100%;
-			height: auto;
-		}
-		footer {
-			background-color: #444;
-			color: #fff;
-			padding: 20px;
-			text-align: center;
-			font-size: 16px;
-		}
-	</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My E-commerce Website</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom CSS styles */
+    /* Add your own CSS styling here */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+  
+    .navbar {
+      background-color: #333;
+      color: #fff;
+    }
+  
+    .navbar-brand {
+      font-size: 24px;
+    }
+  
+    .product-card {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .product-card img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  
+    .product-card h5 {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  
+    .product-card p {
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
-	<header>
-		Welcome to My Website!
-	</header>
-	<nav>
-		<a href="#">Home</a>
-		<a href="#">About</a>
-		<a href="#">Contact</a>
-	</nav>
-	<section>
-		<h1>About Us</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis tristique eros. Etiam vestibulum, magna eget euismod convallis, arcu ex mattis orci, sit amet tincidunt libero mi a lacus. Suspendisse nec arcu ut ipsum rhoncus elementum eget vitae mi. Vestibulum gravida ut velit sit amet eleifend. Proin efficitur consequat ante, ut imperdiet turpis sodales vel. Ut eget elit ut tellus finibus congue. Sed id arcu ut dolor hendrerit eleifend eu in tellus.</p>
-		<img src="https://via.placeholder.com/800x400" alt="Placeholder Image">
-		<p>Morbi eget enim id diam pulvinar molestie. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc ut magna euismod, cursus tellus in, malesuada elit. Ut aliquet nulla ut ante tincidunt, non dignissim erat tempor. Nulla eu enim dui. Aenean bibendum eget metus nec malesuada. Ut rutrum turpis auctor quam fermentum, quis facilisis eros lobortis.</p>
-	</section>
-	<footer>
-		&copy; 2023 My Simple Website. All rights reserved.
-	</footer>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">My E-commerce</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Product List -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="product1.jpg" alt="Product 1">
+          <h5>Product 1</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="product2.jpg" alt="Product 2">
+          <h5>Product 2</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+	     <div class="col-md-4">
+        <div class="product-card">
+          <img src="product3.jpg" alt="Product 3">
+          <h5>Product 3</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2023 My E-commerce. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
